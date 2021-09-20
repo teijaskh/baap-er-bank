@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+
+    <!-- TAILWIND CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl text-center font-bold mt-8">YOUR ACCOUNT <span class="text-red-700">SUMMARY</span></h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+        <section>
+            <div class="grid grid-cols-3 gap-4 mt-12">
+                <!-- Deposit -->
+                <div class="bg-blue-400 rounded p-12 text-white">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-6xl font-bold">$<span id="old-deposit">000</span></h4>
+                </div>
+                <!-- Withdraw -->
+                <div class="bg-green-400 rounded p-12 text-white">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-6xl font-bold">$ <span id="withdraw-total">0</span></h4>
+                </div>
+                <!-- Balance -->
+                <div class="bg-yellow-400 rounded p-12 text-white">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-6xl font-bold">$<span id="total-balance">1240</span></h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- WITHDRAW AND DEPOSIT MONEY SECTION -->
+
+        <section class="mt-12">
+            <h1 class="text-3xl text-center font-bold mt-16"> TRANSACTIONS <span class="text-red-700">PROCESS</span>
+            </h1>
+            <!-- Deposit Amount -->
+            <div class="grid grid-cols-2 gap-4 mt-8 mb-16">
+                <div class="bg-purple-100 rounded">
+                    <h3 class="text-3xl font-bold px-4">Deposit Amount</h3>
+                    <input id="new-deposit" class="my-4 w-3/4 p-4 text-center block mx-4" type="text" name="" id=""
+                        placeholder="$ You Want To Deposit">
+                    <button id="deposit-submit" class="bg-yellow-600 p-4 mx-4 rounded text-pink-50 font-bold mb-4"
+                        type="submit">
+                        Submit
+                    </button>
+                </div>
+                <!-- Withdraw Amount -->
+                <div class="bg-pink-100 rounded">
+                    <h3 class="text-3xl font-bold px-4">Withdraw Amount</h3>
+                    <input id="withdraw-money" class="my-4 w-3/4 p-4 text-center block mx-4" type="text" name="" id=""
+                        placeholder="$ You Want To Withdraw">
+                    <button id="withdraw-submit" class="bg-yellow-600 p-4 mx-4 rounded text-pink-50 font-bold mb-4"
+                        type="submit"> Submit </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ADD BANKING.JS FILE JAVASCRIPT FILE -->
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
